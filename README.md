@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  A simple GitHub Repositories Explorer
+  A Simple GitHub Repositories Explorer
 </h3>
 
 # Índice
