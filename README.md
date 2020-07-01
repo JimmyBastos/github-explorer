@@ -52,30 +52,20 @@ Esta aplicação foi desenolvida com as seguintes tecnologias:
 1. Faça um clone :
 
 ```sh
-  $ git clone https://github.com/SpartanHub/little-friend.git
+  $ git clone https://github.com/JimmyBastos/github-explorer.git
 ```
 
 2. Executando a Aplicação:
 
 ```sh
-  # Execute o comando abaixo nas pastas web, app e server
-  $ npm install
+  # Execute o comando abaixo para instalar as dependencias do projeto
+  $ yarn
 
-  ## Crie o banco de dados
-  $ cd server
-  $ npm run knex:migrate
-  $ npm run knex:seed
+  # Inciciar o servidor de desenvolvimento
+  $ yarn start
 
-  # Inicie a API
-  $ npm run dev
-
-  # Inicie a aplicação web
-  $ cd web
-  $ npm start
-
-  # Inicie a aplicação mobile
-  $ cd app
-  $ npm start
+  # Construir uma build para produção
+  $ yarn build
 ```
 
 <a id="como-contribuir"></a>
