@@ -1,44 +1,105 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <img src=".github/logo.svg" alt="Logo">
+</h1>
 
-## Available Scripts
+<h3 align="center">
+  A simple GitHub Repositories Explorer
+</h3>
 
-In the project directory, you can run:
+# Índice
 
-### `yarn start`
+- [Sobre](#sobre)
+- [Como Construir Este App do Zero](#tutorial)
+- [Tutorial](#tutorial)
+- [Stack](#tecnologias-utilizadas)
+- [Configurando o Ambiente de Desenvolvimento](#como-usar)
+- [Contribua](#como-contribuir)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<a id="sobre"></a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## :bookmark:  Sobre
 
-### `yarn test`
+O <strong>[GitHub Explorer](https://jimmybastos.github.io/github-explorer/) 📲</strong> é uma aplicação Web que permite salvar e listar repositórios do GitHub, além detalhar suas principais informações.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details><summary>Screenshots</summary>
 
-### `yarn build`
+</details>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a id="tecnologias-utilizadas"></a>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :rocket: Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Esta aplicação foi desenolvida com as seguintes tecnologias:
 
-### `yarn eject`
+- [TypeScript](https://www.typescriptlang.org/)
+- [ReactJS](https://reactjs.org/)
+- [React Router DOM](https://reacttraining.com/react-router/)
+- [React Icons](https://react-icons.netlify.com/#/)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [Eslint](https://eslint.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<a id="como-usar"></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :fire:  Configurando o Ambiente de Desenvolvimento
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- ### **Pré-requisitos**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado na máquina
+  - Também, é **preciso** ter um gerenciador de pacotes, se você já tem o Node.js, então o **[NPM](https://www.npmjs.com/)** já vai estar disponível.
+  - Por fim, é **essencial** seguir as intruções para instalar **[Expo](https://expo.io/)**
 
-## Learn More
+1. Faça um clone :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+  $ git clone https://github.com/SpartanHub/little-friend.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Executando a Aplicação:
+
+```sh
+  # Execute o comando abaixo nas pastas web, app e server
+  $ npm install
+
+  ## Crie o banco de dados
+  $ cd server
+  $ npm run knex:migrate
+  $ npm run knex:seed
+
+  # Inicie a API
+  $ npm run dev
+
+  # Inicie a aplicação web
+  $ cd web
+  $ npm start
+
+  # Inicie a aplicação mobile
+  $ cd app
+  $ npm start
+```
+
+<a id="como-contribuir"></a>
+
+## :heavy_check_mark: Como Contribuir
+
+- Faça um Fork desse repositório
+
+- Clone o repositório
+```sh
+  $ git clone https://github.com/<SEU_USUARIO_GIT>/little-friend.git
+```
+- Crie um branch com sua feature: `git checkout -b nome-da-feature`
+
+- Comite suas mudanças: `git commit -m 'feat: Breve descrição da feature'`
+
+- Envie a feature: `git push origin nome-da-feature`
+
+## :memo:  License
+
+Esse projeto está sob a licença MIT. Acesse o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+<h4 align="center">
+    Feito com 💜  by <a href="https://www.linkedin.com/in/jimmybastos" target="_blank">Jimmy Bastos</a>
+</h4>
