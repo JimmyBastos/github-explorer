@@ -2,9 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 import appBackground from "../assets/background.svg";
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
   html {
     font-size: 16px;
     box-sizing: border-box;
