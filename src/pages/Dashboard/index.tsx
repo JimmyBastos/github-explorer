@@ -1,4 +1,5 @@
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 import { FiChevronRight, FiSearch } from 'react-icons/fi';
 import { Title, SearchForm, Repositories, Error } from './styles';
 import logoImage from '../../assets/logo.svg'
@@ -15,11 +16,31 @@ interface Repository {
 }
 
 const Dashboard: React.FC = () => {
+
   let [errorMessage, setErrorMessage] = useState('')
+
   let [newRepo, setNewRepo] = useState('')
-  let [repositories, setRepositories] = useState<Repository[]>([])
+
+  let [repositories, setRepositories] = useState<Repository[]>(() => {
+    const storagedRepositories = localStorage.getItem(
+      '@GithubExplorer:repositories'
+    )
+
+    return storagedRepositories
+      ? JSON.parse(storagedRepositories)
+      : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem(
+      '@GithubExplorer:repositories',
+      JSON.stringify(repositories)
+    )
+  }, [repositories])
 
   async function handleAddRepository(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+
     try {
       if (!newRepo) {
         setErrorMessage('Digite o autor/nome do repositório')
@@ -36,15 +57,12 @@ const Dashboard: React.FC = () => {
 
     } catch {
       setErrorMessage(`Repositorio "${newRepo}" não encontrado`)
-    } finally {
-      event.preventDefault()
-      event.stopPropagation()
     }
   }
 
   return (
     <>
-      <img src={logoImage} />
+      <img src={logoImage} alt="Github Explorer" />
       <Title> Explore Repositórios no Github </Title>
       <SearchForm hasError={!!errorMessage} onSubmit={handleAddRepository}>
         <input
@@ -68,7 +86,11 @@ const Dashboard: React.FC = () => {
 
       <Repositories>
         {repositories.map((repository) => (
-          <a key={repository.owner.avatar_url} className="repository" href="#">
+          <Link
+            key={repository.owner.avatar_url}
+            className="repository"
+            to={`repositories/${repository.full_name}`}
+          >
             <img
               className="repository__image"
               src={repository.owner.avatar_url}
@@ -83,7 +105,7 @@ const Dashboard: React.FC = () => {
               </p>
             </div>
             <FiChevronRight size="20" className="repository__icon" />
-          </a>
+          </Link>
         ))}
       </Repositories>
     </>
