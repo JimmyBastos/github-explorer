@@ -10,7 +10,7 @@
 # Índice
 
 - [Sobre](#sobre)
-- [Screenshots](#tutorial)
+- [Screenshots](#screenshots)
 - [Como Construir Este App do Zero](#tutorial)
 - [Tutorial](#tutorial)
 - [Stack](#tecnologias-utilizadas)
