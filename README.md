@@ -11,8 +11,6 @@
 
 - [Sobre](#sobre)
 - [Screenshots](#screenshots)
-- [Como Construir Este App do Zero](#tutorial)
-- [Tutorial](#tutorial)
 - [Stack](#tecnologias-utilizadas)
 - [Configurando o Ambiente de Desenvolvimento](#como-usar)
 - [Contribua](#como-contribuir)
