@@ -85,12 +85,32 @@ Esta aplicação foi desenolvida com as seguintes tecnologias:
 
 - Envie a feature: `git push origin nome-da-feature`
 
+## :computer: Author
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/jimmybastos/">
+        <img src="https://avatars0.githubusercontent.com/u/17859531?s=200&v=4" width="100px;" alt="Jimmy Bastos"/>
+        <br />
+        <sub>
+          <b>@Jimmy Bastos</b>
+        </sub>
+       </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/school/rocketseat/">
+        <img src="https://avatars0.githubusercontent.com/u/28929274?s=200&v=4" width="100px;" alt="Rocketseat"/>
+        <br />
+        <sub>
+          <b>@Rocketseat</b>
+        </sub>
+       </a>
+    </td>
+  </tr>
+</table>
+
 ## :memo:  License
 
 Esse projeto está sob a licença MIT. Acesse o arquivo [LICENSE](LICENSE) para mais detalhes.
 
----
-
-<h4 align="center">
-    Feito com 💜  by <a href="https://www.linkedin.com/in/jimmybastos" target="_blank">Jimmy Bastos</a>
-</h4>
