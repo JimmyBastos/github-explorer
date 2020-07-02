@@ -6,6 +6,9 @@
   A Simple GitHub Repositories Explorer
 </h3>
 
+![preview](.github/dashboard.png)
+![preview](.github/detail.png)
+
 # Índice
 
 - [Sobre](#sobre)
@@ -20,8 +23,6 @@
 ## :bookmark:  Sobre
 
 O <strong>[GitHub Explorer](https://jimmybastos.github.io/github-explorer/) 📲</strong> é uma aplicação Web que permite salvar e listar repositórios do GitHub, além detalhar suas principais informações.
-
-<details><summary>Screenshots</summary>
 
 </details>
 
